@@ -4,7 +4,7 @@ from fastapi import APIRouter, Query, Depends, HTTPException, status
 from typing import List
 from sqlalchemy.orm import Session
 from modelos import modelo_producto
-from app_dbpost.esquema import eschema
+from esquema import eschema
 
 router = APIRouter()
 @router.get("/")
