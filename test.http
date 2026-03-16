@@ -1,0 +1,27 @@
+GET http://127.0.0.1:8000/productos/prod_all
+
+###
+GET http://127.0.0.1:8000/productos/prod/11
+
+###
+POST http://127.0.0.1:8000/productos/add 
+Content-Type: application/json
+
+{
+  "nom_prod": "carro",
+  "proveedor": "Suzuki",
+  "id_prod": 8
+}
+
+###
+PUT http://127.0.0.1:8000/productos/update/9
+Content-Type: application/json
+
+{
+    "id_prod": 9,
+    "nom_prod": "TV",
+    "proveedor": "Samsung"
+}
+
+###
+DELETE http://127.0.0.1:8000/productos/borrar/15
